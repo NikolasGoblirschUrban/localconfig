@@ -1,6 +1,8 @@
 application:
   name: goalservice
   message: Configured by Local Server
+server:
+  port: 8081
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
