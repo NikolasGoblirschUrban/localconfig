@@ -1,7 +1,10 @@
 application:
-  name: goal
   message: Configured by Local Server
 spring:
+  application:
+    name: goal
+  profiles:
+    active: default
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://goals-microservice-mysql.mysql.database.azure.com:3306/goals
