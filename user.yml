@@ -1,4 +1,5 @@
 application:
+  name: userservice
   message: Configured by Local Server
 spring:
   datasource:
