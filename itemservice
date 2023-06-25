@@ -1,0 +1,13 @@
+application:
+  name: itemservice
+  message: Configured by Local Server
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://goals-microservice-mysql.mysql.database.azure.com:3306/items
+    username: spring@goals-microservice-mysql
+    password: iCUvJWC9HUWxzoCiJ8X3EQ
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: true
+    show-sql: true
