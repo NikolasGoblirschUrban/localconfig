@@ -1,6 +1,8 @@
 application:
   name: itemservice
   message: Configured by Local Server
+server:
+  port: 8083
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
