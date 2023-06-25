@@ -1,4 +1,5 @@
 application:
+  name: goal
   message: Configured by Local Server
 spring:
   datasource:
