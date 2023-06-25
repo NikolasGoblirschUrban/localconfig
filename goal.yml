@@ -2,7 +2,7 @@ application:
   message: Configured by Local Server
 spring:
   application:
-    name: goal
+    name: goalservice
   profiles:
     active: default
   datasource:
