@@ -10,9 +10,6 @@ spring:
     username: spring
     password: GoalsAdmin123!
   jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
       show-sql: true
