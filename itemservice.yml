@@ -6,9 +6,9 @@ server:
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://goals-microservice-db.mysql.database.azure.com:3306/goals
+    url: jdbc:mysql://goals-microservice-db.mysql.database.azure.com:3306/items
     username: spring
-    password: GoalsAdmin123!
+    password: ItemAdmin123!
   jpa:
     properties:
       hibernate:
@@ -20,3 +20,4 @@ spring:
     servicebus:
       connection-string: Endpoint=sb://goalsservice.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=WSJdd5dkKAAs2SKz6qpaD4WlLbr2ssOpx+ASbP9dDdA=
       pricing-tier: standard
+      topic-client-id: 6ea22758-6c80-4841-88dc-182bf540d7e0
