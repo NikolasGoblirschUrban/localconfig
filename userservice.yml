@@ -8,7 +8,6 @@ spring:
     broker-url: tcp://localhost:61616
     user: admin
     password: admin
-    client-id: userservice
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://user-microservice-db.mysql.database.azure.com:3306/users
