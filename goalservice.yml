@@ -4,10 +4,6 @@ application:
 server:
   port: 8081
 spring:
-  activemq:
-    broker-url: tcp://localhost:61616
-    user: admin
-    password: admin
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://goals-microservice-db.mysql.database.azure.com:3306/goals
@@ -21,11 +17,11 @@ spring:
         use_sql_comments: true
     hibernate:
       ddl-auto: update
-  #jms:
-   # servicebus:
-    #  connection-string: Endpoint=sb://goalsservice.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=WSJdd5dkKAAs2SKz6qpaD4WlLbr2ssOpx+ASbP9dDdA=
-     # pricing-tier: standard
-      #topic-client-id: 6ea22758-6c80-4841-88dc-182bf540d7e0
+  jms:
+    servicebus:
+      connection-string: Endpoint=sb://goalsservice.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=WSJdd5dkKAAs2SKz6qpaD4WlLbr2ssOpx+ASbP9dDdA=
+      pricing-tier: standard
+      topic-client-id: 6ea22758-6c80-4841-88dc-182bf540d7e0
 uuids:
   goal-type:
     performance-goal: 32fbd6b5-cfe6-11ed-bfbd-1bfead64f085
